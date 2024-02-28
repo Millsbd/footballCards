@@ -1,0 +1,23 @@
+HTML: 
+-boilerplate header linking to css stylesheet
+-add h1 title and create a main element to store info. Add div with team info which does not change. 
+- add a label for filtering players with a select which are the dropdown options for filtering
+-create divs for the various plaeyr cards. 
+close main, add a footer and a script to link the js to the html
+
+CSS:
+set the sizing properties using before and after the main selector
+-add in variables to root for all the colors used.
+-use flex to center and position the unchaning stats. 
+-use flex to organize the various player cards. 
+
+
+JS:
+-use getElementById() with the dom to select all the relevent info from the html
+-create an object to store the contant info for the team with an array of player objects with their info
+-use Object.freeze(obj) to keep this info from changing
+-use destrucuring to create variables of the info
+-diplay this info using textContent
+-create a function to generate the html for the player cards by map() through the players array. This goes through each card and generates the releveant html using template literals. 
+-add an event listener to capture the selection from the dropdown. 
+-add a switch stament which will diplay only the cards which match the criteria from the selection. 
